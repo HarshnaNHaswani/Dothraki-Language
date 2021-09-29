@@ -1,0 +1,81 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+:root{
+    --dragon-red: #ff0000;
+    --dragon-orange: #ffa500;
+    --dragon-yellow: #ffe600;
+    --ice-blue: #99FFFF;
+    --medium-ice: #CCFFFF;
+    --light-ice: #EBFFFF;
+}
+html, body{
+    margin: 0;
+    width: 100%;
+    background-image: radial-gradient(#99FFFF, #CCFFFF, #EBFFFF);
+    min-width: 380px;
+}
+
+
+header{
+    /* font-family: 'Festive', cursive; */
+    font-family: 'Dokdo', cursive;
+    font-size: xxx-large;
+    text-align: center;
+    padding: 5rem;
+    
+}
+.ice{
+    color: var(--ice-blue);
+    text-shadow: 2px 2px 5px var(--light-ice);
+    filter: blur(0)
+}
+
+.fire{
+    background-image: linear-gradient(270deg, red, #ffa500, #ffff00);
+    /* background-image: radial-gradient(#ff0000 , #ffa500, #ffff00); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+
+section{
+    font-size: xxx-large;
+    font-family: 'La Belle Aurore', cursive;
+    padding: 0.5rem;
+    text-align: center;
+}
+.container{
+    padding: 3% 20%
+}
+section p{
+    max-width: 500pxx;
+    -webkit-text-fill-color: black; 
+}
+section textarea{
+    width: 40%;
+    height: 10vh;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    -webkit-text-fill-color: black;
+}
+section button{
+    padding:1rem;
+    font-size: 72px;
+    font-family: 'Dokdo', cursive;
+}
+section div{
+    border: 0.2rem none;
+    height: auto;
+    width: auto;
+    margin: 2rem;
+}
+footer{
+    padding: 0.2rem;
+    -webkit-text-fill-color: black; 
+    background-color: var(--ice-blue);
+}
+
