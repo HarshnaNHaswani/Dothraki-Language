@@ -21,10 +21,23 @@ html, body{
 header{
     /* font-family: 'Festive', cursive; */
     font-family: 'Dokdo', cursive;
-    font-size: xxx-large;
+    font-size: 3em;
     text-align: center;
-    padding: 5rem;
+    padding: 2em 2em 0 ;
     
+}
+@media only screen and (max-height: 800px) and (max-width: 600px) {
+
+    header {
+        font-size: 1.5em;
+    }
+}
+.head{
+    height: 100vh;
+}
+.head .arrow{
+    margin: 20%;
+    font-size: 2em;
 }
 .ice{
     color: var(--ice-blue);
@@ -33,7 +46,7 @@ header{
 }
 
 .fire{
-    background-image: linear-gradient(270deg, red, #ffa500, #ffff00);
+    background-image: linear-gradient(270deg, red, #ff8800, #f8e807);
     /* background-image: radial-gradient(#ff0000 , #ffa500, #ffff00); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -41,37 +54,62 @@ header{
 
 
 section{
-    font-size: xxx-large;
     font-family: 'La Belle Aurore', cursive;
-    padding: 0.5rem;
+    padding:  0.5rem;
     text-align: center;
 }
 .container{
-    padding: 3% 20%
+    padding: 3% 20%;
 }
-section p{
-    max-width: 500pxx;
-    -webkit-text-fill-color: black; 
+.container p{
+    font-size: 25px;
+    background-color: rgb(74, 74, 75);
+    -webkit-text-fill-color: rgb(208, 209, 201); 
+    padding: 5px;
+    text-shadow: none;
 }
-section textarea{
-    width: 40%;
+.main textarea{
+    width: 55%;
     height: 10vh;
     padding: 1rem;
     border: none;
     border-radius: 0.5rem;
     font-size: 15px;
+    background-color: transparent;
     -webkit-text-fill-color: black;
+    text-align: center;
 }
-section button{
-    padding:1rem;
-    font-size: 72px;
+.main #txt-input:hover{
+ border:1px solid #ff0000;
+}
+.main #txt-input{
+    margin-top: 2.5% 
+}
+.main button{
+    padding: 5px;
+    font-size: 3em;
     font-family: 'Dokdo', cursive;
+    border-radius: 25px;
 }
-section div{
+.main button:hover{
+    box-shadow: 3px 3px 8px 2px #353535;
+}
+.main div{
     border: 0.2rem none;
     height: auto;
     width: auto;
     margin: 2rem;
+}
+.main #div-output::before{
+    content: "translated text: ";
+    font-weight: 100;
+    font-stretch: extra-condensed;
+    padding-right: 10px;
+}
+.main #div-output{
+    font-size: 3em;
+    font-weight: 700;
+    visibility: hidden;
 }
 footer{
     padding: 0.2rem;

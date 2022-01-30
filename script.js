@@ -19,6 +19,7 @@ function clickHandler(){
     .then(response => response.json())
     .then(json => {
         divOutput.innerText = json.contents.translated
+        divOutput.style.visibility = "visible";       
     })
     .catch(errorHandler)
 };
